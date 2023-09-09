@@ -1,30 +1,30 @@
 #include <stdio.h>
 /**
- *main - Entry point
- *Description: 'prints all possible different combinations of two digits'
- *Return: always 0
+ * main - Entry point
+ * Description: 'prints all possible different combinations of two digits'
+ * Return: always 0
  */
 int main(void)
 {
-	int n;
-	int m;
+	int n = '0';
+	int m = '0';
 
-	for (n == 0; n <= 9; n++)
+	for (m = '0'; m <= '9'; m++)
 	{
-		for (m = 0; m <= 9; m++)
+		for (n = '0'; n <= '9'; n++)
 		{
-			if (!((n > m) || (n == m)))
+			if (!((n == m) || (m > n)))
 			{
-				if (n == '8' &&  m == '9')
-				{
-					continue;
-				}
-				putchar(n);
 				putchar(m);
-				putchar(',' ' '); /* Add a space after the comma */
+				putchar(n);
+				if (!(n == '9' && m == '8'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			putchar('\n');
-			return (0);
 		}
 	}
+	putchar('\n');
+	return (0);
 }
