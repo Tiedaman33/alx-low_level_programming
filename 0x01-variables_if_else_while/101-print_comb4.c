@@ -6,22 +6,22 @@
  */
 int main(void)
 {
-	int n = '0';
-	int m = '0';
+	int h = '0';
+	int t = '0';
 	int o = '0';
 
-	for (o = '0'; o <= 9; o++)
+	for (h = '0'; h <= 9; h++)
 	{
-		for (m = '0'; m <= '9'; m++)
+		for (t = '0'; t <= '9'; t++)
 		{
-			for (n = '0'; n <= '9'; n++)
+			for (o = '0'; o <= '9'; o++)
 			{
-				if (!((n == m) || (m == o) || (m > n) || (o > m)))
+				if (!((o == t) || (t == h) || (t > o) || (h > t)))
 				{
+					putchar(h);
+					putchar(t);
 					putchar(o);
-					putchar(m);
-					putchar(n);
-					if (!(n == '9' && o == '7' && m == '8'))
+					if (!(o == '9' && h == '7' && t == '8'))
 					{
 						putchar(',');
 						putchar(' ');
