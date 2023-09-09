@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *Description: 'check for number if it is postive or negative'
+ *Description: 'prints all combinations of single digits'
  *Return: always 0
  */
 int main(void)
