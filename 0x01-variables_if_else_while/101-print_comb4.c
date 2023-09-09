@@ -1,33 +1,25 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: 'prints all possible different combinations of three digits'
- * Return: always 0
+ *main - Entry point
+ *Description: 'check for number if it is postive or negative'
+ *Return: always 0
  */
 int main(void)
 {
-	int h, t, o;
+	int i, j, k;
 
-	for (h = 48; h <= 57; h++)
-	{
-		for (t = h + 1; t <= 57; t++)
-		{
-			for (o = t + 1; o <= 57; o++)
-			{
-				if (!(o == t ||  t == h || (t > o) || (h > t)))
+	for (i = 0; i <= 9; i++)
+		for (j = 0; j <= 9; j++)
+			for (k = 0; k <= 9; k++)
+				if ((i < j) && (j < k))
 				{
-					putchar(h);
-					putchar(t);
-					putchar(o);
-					if (!(o == 57 && h == 55 && t == 56))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(i + 48);
+					putchar(j + 48);
+					putchar(k + 48);
+					if (k != 9 || j != 8 || i != 7)
+						putchar(44);
+					putchar(32);
 				}
-			}
-		}
-	}
 	putchar('\n');
 	return (0);
 }
