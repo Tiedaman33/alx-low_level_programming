@@ -8,18 +8,18 @@ int main(void)
 {
 	int h, t, o;
 
-	for (h = 48; h <= 58; h++)
+	for (h = 48; h <= 57; h++)
 	{
-		for (t = 49; t <= 58; t++)
+		for (t = h + 1; t <= 57; t++)
 		{
-			for (o = 50; o <= 58; o++)
+			for (o = t + 1; o <= 57; o++)
 			{
-				if (o > t && t > h)
+				if (!(o == t ||  t == h || (t > o) || (h > t)))
 				{
 					putchar(h);
 					putchar(t);
 					putchar(o);
-					if (h != 55 && t != 56)
+					if (!(o == 57 && h == 55 && t == 56))
 					{
 						putchar(',');
 						putchar(' ');
