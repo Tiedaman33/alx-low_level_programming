@@ -16,7 +16,11 @@ int main(void)
        /* while (i < 10)*/
         /*{*/
                /* putchar(i);*/
+<<<<<<< HEAD
        /* }*/
+=======
+        /*}*/
+>>>>>>> adfe2654d555f7b9365cc4d6d51d430cf4c69a40
 
         printf("Infinite loop avoided! \\o/\n");
 

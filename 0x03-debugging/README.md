@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #C - Debugging
 
 #TASKS.
@@ -21,3 +22,7 @@ This program prints the largest of three integers.
 mandatory
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
+=======
+#0x03. C - Debugging
+this is my first debugging projec. im gonna get good at at it
+>>>>>>> adfe2654d555f7b9365cc4d6d51d430cf4c69a40
