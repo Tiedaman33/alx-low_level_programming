@@ -4,25 +4,26 @@
  * _strcat-concats two strings
  * @dest: pointer destination
  * @src: pointer source
- * Return void
+ *
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
-	char *result = dest; /*store the oringinal destination address for returning*/
+	int i;
+	int j;
 
-	/*move 'dest' pointer to end of string*/
-	while (*dest != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		dest++;
+		i++;
 	}
-
-	/*copy character from 'src' to 'dest'*/
-	while (*src != '\0')
+	j = 0;
+	while (src[i] != '\0')
 	{
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++
 	}
-	dest = '\0'; /*add the terminating null byte*/
-
-	return (result);
+	dest[i] = '\0';
+	return (dest);
 }
