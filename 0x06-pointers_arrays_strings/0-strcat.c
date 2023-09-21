@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat-concats two strings
- * @dest: pointer destination
- * @src: pointer source
+ * _strcat-concatenates two strings
+ * @dest: input value
+ * @src: input value
  *
  * Return: void
  */
