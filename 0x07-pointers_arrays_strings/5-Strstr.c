@@ -17,7 +17,7 @@ char *_strstr(char *haystack, char *needle)
 			n++;
 			m++;
 		}
-		if (m == '\0')
+		if (*m == '\0')
 			return (haystack);
 	}
 	return (0);
