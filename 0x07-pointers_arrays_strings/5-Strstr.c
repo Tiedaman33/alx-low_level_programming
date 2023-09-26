@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 /**
  * _strstr - Entry point
  * @haystack: input
@@ -17,8 +19,9 @@ char *_strstr(char *haystack, char *needle)
 			n++;
 			m++;
 		}
+		
 		if (*m == '\0')
 			return (haystack);
 	}
-	return (0);
+	return NULL;
 }
