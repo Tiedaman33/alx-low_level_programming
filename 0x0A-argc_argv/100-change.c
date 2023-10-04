@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int cents;
 	int coins[] = {25, 10, 5, 2, 1};
 	int num_coins = sizeof(coins) / sizeof(coins[0]);
-	int min_coins;
+	int min_coins = 0;
 	int i;
 
 	if (argc != 2)
