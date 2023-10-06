@@ -25,7 +25,7 @@ int is_valid_input(const char *num_str)
  * @num2: second integer
  * Return: the result of multiplication
  */
-int multiply(int num1,int num2)
+int multiply(int num1, int num2)
 {
 	return (num1 * num2);
 }
