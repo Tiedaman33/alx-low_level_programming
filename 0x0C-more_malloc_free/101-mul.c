@@ -59,6 +59,12 @@ int main(int argc, char *argv[])
 	num1 = atoi(num1_str);
 	num2 = atoi(num2_str);
 
+	if  (num1 < 0 || num2 < 0)
+	{
+		printf("Error\n");
+		return (98);
+	}
+
 	result = multiply(num1, num2);
 
 	printf("%d\n", result);
