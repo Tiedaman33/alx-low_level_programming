@@ -3,11 +3,11 @@
 /**
  * array_iterator - prints each array elem on a newl
  * @array: array
- * @size: how many elem to print
+ * @size: how many elememnts to print
  * @action: pointer to print in regular or hex
  * Return: void
  */
-void arrayy_iterator(int *array, size_t size, void(*action)(int))
+void array_iterator(int *array, size_t size, void(*action)(int))
 {
 	unsigned int i;
 
