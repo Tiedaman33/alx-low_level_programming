@@ -1,7 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdio.h>
-
+#include <stddef.h>
+#include <stdlib.h>
 
 typedef struct list_s {
     char *str;
@@ -11,5 +12,6 @@ typedef struct list_s {
 
 size_t print_list(const list_t *h);
 int _putchar (char c);
-#endif
+size_t list_len(const list_t *h);
 
+#endif
