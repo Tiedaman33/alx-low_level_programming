@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint - adds new node to begining
+ * add_nodeint_end - adds new node to begining
  * @head: pointer to node pointer
  * @n: interger to parse list
  * Return: new node
