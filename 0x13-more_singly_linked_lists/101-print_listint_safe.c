@@ -13,7 +13,7 @@ size_t looped_listint_len(const listint_t *head)
 	const listint_t *current, *task;
 	size_t nodes = 1;
 
-	if (head == NULL | head->next == NULL)
+	if (head == NULL || head->next == NULL)
 		return (0);
 
 	current = head->next;
@@ -34,7 +34,7 @@ size_t looped_listint_len(const listint_t *head)
 			while (current != task)
 			{
 				nodes++;
-				current - current->next;
+				current = current->next;
 			}
 			return (nodes);
 		}
