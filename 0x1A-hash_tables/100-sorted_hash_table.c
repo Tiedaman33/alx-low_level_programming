@@ -153,10 +153,10 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *node;
-	
+
 	if (ht == NULL)
 		return;
-	
+
 	node = ht->shead;
 	printf("{");
 	while (node != NULL)
@@ -176,7 +176,7 @@ void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *node;
-	
+
 	if (ht == NULL)
 		return;
 
